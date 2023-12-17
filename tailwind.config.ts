@@ -8,12 +8,11 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      primary: colors.slate, 
-      secondary: colors.white, 
-    },
- 
     extend: {
+      colors: {
+        primary: colors.slate, 
+        secondary: colors.white,  
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

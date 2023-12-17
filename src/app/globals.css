@@ -2,12 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
+.Golang {
+  background-color: #37666d;
+}
+
+.Django {
+  background-color: #0B4B33;
+}
+
+.Kubernetes {
+  background-color: #0F75E0;
+}
+
+.cube {
+  box-sizing: content-box;
+}
+
+.cube::before {
+  z-index: -99;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  height: 8vw; /* Height of the parallelogram */
+  width: 100%; /* Height of the parallelogram */
+  transform: skewX(-20deg); 
+  background-color: #0f172a; /* Color of the parallelogram */
+  transform-origin: bottom left; /* Aligns the bottom edge */
+}
+
+.cube::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%; 
+  width: calc(8vw / tan(70deg));
+  background-color: #020617; 
+  transform: skewY(-70deg); 
+  transform-origin: top left; 
+}
+
+@layer components {
+    /* .animate-in {
+      @apply translate-x-11 opacity-0;
+    } */
+}
 
 @layer base {
     html {
-        @apply scroll-smooth
+        @apply scroll-smooth;
     }
     body {
         @apply bg-primary-700;
+        @apply overflow-x-hidden;
+        @apply leading-9
+    }
+    section {
+        @apply p-8;
+        @apply space-y-0;
+        @apply bg-primary-800
+    }
+    h1 {
+        @apply text-4xl;
+    }
+    h2 {
+        @apply text-xl
     }
 }
+
+
+@layer utilities {
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      background: none;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background: #515356;
+      border-radius: 100vh;
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #303133;
+    }
+  }
