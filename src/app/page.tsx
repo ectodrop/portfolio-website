@@ -86,11 +86,20 @@ export default function Home() {
 
   return (
     <div className='min-h-screen bg-primary-700 text-primary-200 font-mono flex items-center my-20 justify-center'>
-
+      <div className='fixed p-1 top-0 w-screen z-50 bg-primary-800 sm:hidden'>
+        {/* <div className='bg-primary-800 w-full aspect-square rounded-full'><div>Howard</div></div> */}
+        <h1 className='text-center bg-opacity-0'>HOWARD YANG</h1>
+        <div className='flex justify-center gap-4'>
+          <IconContext.Provider value={{ size: "2em",}}>
+            <a title="github"  href="https://github.com/ectodrop"><FaGithub /></a>
+            <a title="linkedin" href="https://www.linkedin.com/in/yang-howard/"><FaLinkedin /></a>
+            <a title="resume" href="/howard_yang_resume.pdf"><FaFilePdf /></a>
+          </IconContext.Provider>
+        </div>
+      </div>
       <div className='transform flex flex-col flex-initial bg-primary-700'>
         <div className='flex'>
           <div className='p-4 text-right flex-col space-y-4 h-fit sticky top-1/4 hidden sm:flex'>
-            {/* <div className='bg-primary-800 w-full aspect-square rounded-full'><div>Howard</div></div> */}
             <a href='#' className='text-4xl bg-opacity-0'>HOWARD YANG</a>
             <div className='flex justify-end gap-4'>
               <IconContext.Provider value={{ size: "1.5em",}}>
@@ -106,10 +115,7 @@ export default function Home() {
             })}
           </div>
 
-          <div className='fixed top-0 w-screen z-50 bg-primary-800 sm:hidden'>
-            {/* <div className='bg-primary-800 w-full aspect-square rounded-full'><div>Howard</div></div> */}
-            <h1 className='text-center bg-opacity-0'>HOWARD YANG</h1>
-          </div>
+
 
           <div className='flex flex-col flex-initial max-w-[1024px] pr-[3vw] space-y-20'>
             <div data-section id='about' className='z-10 pt-10 flex flex-col mt-56'>
@@ -145,7 +151,7 @@ export default function Home() {
           </div>
 
         </div>
-        <div className='self-center mt-40'>Made with TailwindCSS and Nextjs by Howard Yang</div>
+        <div className='self-center text-center text-sm mt-40'>Made with TailwindCSS and Nextjs by Howard Yang © 2023</div>
         <a className='self-center block underline' href="mailto:yanghoward1@gmail.com">email me</a>
       </div>
     </div>

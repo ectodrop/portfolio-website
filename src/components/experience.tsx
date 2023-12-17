@@ -3,7 +3,7 @@ import { ExperienceProps } from "@/proptypes";
 export default function Experience(props: ExperienceProps) {
     return (
         <div>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between">
                 <h1>{props.company}</h1>
                 <div>{props.startDate} - {props.endDate}</div>
             </div>
