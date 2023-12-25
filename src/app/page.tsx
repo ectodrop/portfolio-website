@@ -115,10 +115,8 @@ export default function Home() {
             })}
           </div>
 
-
-
           <div className='flex flex-col flex-initial max-w-[1024px] pr-[3vw] space-y-20'>
-            <div data-section id='about' className='z-10 pt-10 flex flex-col mt-56'>
+            <div data-section id='about' className='z-10 pt-10 flex flex-col mt-20'>
               <section className='relative cube space-y-4'>
                 <h1>Hi there!👋</h1>
                 <div className='w-1/4 rounded-full aspect-square bg-[position:75%_25%] bg-[size:150%] float-right bg-[url(/smola.png)] duration-300 hover:bg-[url(/smola.gif)]'></div>

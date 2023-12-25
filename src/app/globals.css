@@ -25,9 +25,9 @@
   left: 0;
   right: 0;
   bottom: 100%;
-  height: 8vw; /* Height of the parallelogram */
+  height: 6vw; /* Height of the parallelogram */
   width: 100%; /* Height of the parallelogram */
-  transform: skewX(-20deg); 
+  transform: skewX(-40deg); 
   background-color: #0f172a; /* Color of the parallelogram */
   transform-origin: bottom left; /* Aligns the bottom edge */
 }
@@ -38,9 +38,9 @@
   top: 0;
   left: 100%;
   height: 100%; 
-  width: calc(8vw / tan(70deg));
+  width: calc(6vw / tan(50deg));
   background-color: #020617; 
-  transform: skewY(-70deg); 
+  transform: skewY(-50deg); 
   transform-origin: top left; 
 }
 
