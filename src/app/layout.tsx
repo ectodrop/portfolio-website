@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import './globals.css'
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
         {children}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DEL70N49ZN" />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-DEL70N49ZN');
+          `}
+        </Script>
         <SpeedInsights />
         <Analytics />
       </body>
