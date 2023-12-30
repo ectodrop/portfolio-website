@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.Golang {
-  background-color: #37666d;
-}
-
-.Django {
-  background-color: #0B4B33;
-}
-
-.Kubernetes {
-  background-color: #0F75E0;
-}
-
 .cube {
   box-sizing: content-box;
 }
