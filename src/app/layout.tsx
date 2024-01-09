@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   description: 'A website to showcase projects I\'ve worked on',
   openGraph: {
     images: [{
-      url: '/preview.png'
+      url: 'https://hyang.dev/preview.png'
     }]
-  }
+  },
 }
 
 export default function RootLayout({
