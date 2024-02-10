@@ -129,15 +129,17 @@ export default function Home() {
               </section>
             </div>
 
-            <section data-section id='projects' className='animate-in duration-300 mt-4 -pt-4 relative cube space-y-16'>
-              <h1 className='mb-4'>[PROJECTS]</h1>
+            <section data-section id='projects' className='bg-transparent animate-in duration-300 mt-4 p-0 -pt-4 relative space-y-16'>
+              {/* <h1 className='mb-2 bg-primary-800 cube relative p-4'>PROJECTS</h1> */}
+              <div className='grid md:grid-cols-3 grid-cols-2 gap-8'>
               {projects.map((project, i) => {
-                return <div data-anim className='animate-in duration-300' key={i}><ProjectDescription {...project} /></div>
+                return <div data-anim className='bg-primary-800 before:-z-[96] after:-z-[97] cube relative animate-in duration-300 row-span-1' key={i}><ProjectDescription {...project} /></div>
               })}
+              </div>
             </section>
 
             <section data-section id='experience' className='animate-in duration-300 space-y-4 relative cube bg-primary-800'>
-              <h1 className='text-5xl mb-8'>EXPERIENCE</h1>
+              <h1 className='mb-4'>EXPERIENCE</h1>
               {experiences.map((exp, i) => {
                 return (
                 <div key={i}>

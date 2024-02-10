@@ -1,6 +1,6 @@
 export type ProjectProps = {
     title: string,
-    description: string,
+    description?: string,
     picture: string,
     url: string,
 }
