@@ -6,8 +6,8 @@ const experiences: ExperienceProps[] = [
         position: "Software Engineer Intern",
         startDate: "Aug 2023",
         endDate: "Jan 2024",
-        description: `Led the reduction of AWS costs by $30k/month after migrating critical lambda functions and cloud resources to an on-premises pub-sub solution using Golang, PostgreSQL, and Apache Kafka.
-        Saved 100 hours of developer time per year by creating custom Github Actions across 5 different repositories to run integration tests and deploy to Kubernetes and ArgoCD.`,
+        description: `Automated manually scanning QR codes by designing and deploying a highly-performant Golang application to call Tesla factory APIs by ingesting data from a Kafka Topic that produces 26 million events per day. 
+        Reduced future AWS costs by $30k/month by analysing critical lambda functions, migrating cloud resources into Tesla data centers, and creating a deployment plan that ultimately resulted in no downtime during cut-over.`,
         skills: ["Go", "Django", "Kubernetes", "ArgoCD", "Kafka"],
     },
     {
@@ -15,11 +15,9 @@ const experiences: ExperienceProps[] = [
         position: "Team Lead",
         startDate: "Oct 2022",
         endDate: "May 2023",
-        description: `Co-Founded a startup to create a match-making web app aiding in the formation of hundreds of total teams.
-        Received repeat invitations to be utilized again in the following years after deploying the application at several
-        hackathons, resulting in 50 teams being created from a complex match-making algorithm.
-        Delivered a working prototype to market in 2 months after leading the development of the Django REST
-        backend with 7 developers, designing the architecture, and directing weekly SCRUM meetings.`,
+        description: `Built a web app which gives users a Tinder-like UI to find group members for events such as hackathons.
+        Led the development team of 4 as the sole experienced backend engineer to write a Django REST API.
+        Deployed the application at hackathons allowing over 50 teams to be created from our matching algorithm.`,
         skills: ["React", "Typescript", "Django (DRF)", "SQLite", "Docker"]
     },
     {
